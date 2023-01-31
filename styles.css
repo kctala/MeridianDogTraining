@@ -1,0 +1,254 @@
+/* font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Unbounded', cursive;
+font-family: 'Urbanist', sans-serif; */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Urbanist', sans-serif; */
+}
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+h3 {
+    font-size: 1.25rem;
+    padding: 0.75rem 0;
+}
+
+/* //////// HEADER //////// */
+header {
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+header #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+#header .logo {
+    width: 4rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+}
+#header .nav ul {
+    display: flex;
+    gap: 2rem;
+}
+#header .nav li {
+    display: inline-block;
+}
+#header .nav a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: black;
+}
+#header .nav a:hover {
+    text-decoration: underline #2C5A5E;
+}
+#header .nav a:active {
+    color: #2C5A5E;
+    text-decoration: underline #2C5A5E;
+}
+#header .icons ul {
+    display: flex;
+    gap: 1.5rem;
+    padding-right: 3rem;
+}
+#header .icons li {
+    display: inline-block;
+}
+#header .icons img {
+    width: 2rem;
+}
+
+#header .dropdown {
+    display: inline-block;
+    position: relative;
+}
+#header .dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color: rgba(250, 235, 215, 0.67);
+    padding: 0.5rem;
+    border: 1px solid rgb(225, 210, 192);
+}
+#header .dropdown:hover .dropdown-options {
+    display: block;
+}
+#header .dropdown-options a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    line-height: 1.8;
+}
+#header .dropdown .hamburger {
+    background-color: white;
+    border: none;
+}
+
+/* //////// MAIN CONTENT //////// */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 6rem;
+}
+
+/* //////// COMPANY SECTION //////// */
+#company-section .company {
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+}
+#company-section .company h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+}
+
+/* //////// TRAINING SECTION //////// */
+#training-section {
+    width: 100%;
+    background-color: #6BD9E3;
+    background: linear-gradient(to bottom, #6BD9E3, #ABDADE);
+}
+#training-section .training {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+#training-section .training .box {
+    width: 55%;
+    height: auto;
+}
+#training-section img {
+    width: 100%;
+}
+
+/* //////// ABOUT SECTION //////// */
+#about-section {
+    background-color: #2C5A5E;
+    color: white;
+    padding: 2%;
+}
+#about-section .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10% 2rem 10%;
+}
+#about-section .about p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* //////// IMAGE SECTION //////// */
+#image-section {
+    width: 100%;
+    height: 30rem;
+    background-image: url(./img/dog_image-section_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* //////// LEARN SECTION //////// */
+#learn-section {
+    width: 100%;
+    background-color: #84A8AB;
+}
+#learn-section .learn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#learn-section .learn h2 {
+    color: white;
+}
+#learn-section .learn .training-articles {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    padding: 0 10% 4rem 10%;
+}
+#learn-section .learn .article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    padding: 1rem 1rem 2rem 1rem;
+    box-shadow: 1px 1px 1px 1px gray;
+    border-radius: 0.25rem;
+}
+#learn-section .learn .article:hover {
+    background-color: rgb(211, 243, 246);
+}
+#learn-section .learn .article:active {
+    background-color: rgb(211, 243, 246);
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
+}
+#learn-section .learn .article img {
+    width: 100%;
+}
+#learn-section .article a {
+    color: black;
+    text-decoration: none;
+}
+
+/* //////// FOOTER //////// */
+footer {
+    width: 100%;
+    background-color: #354445;
+}
+#footer {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+}
+#footer .icons-socialmedia ul {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+}
+#footer .icons-socialmedia li {
+    display: inline-block;
+
+}
+#footer .icons-socialmedia img {
+    width: 2rem;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 0.25rem;
+}
+#footer .subscribe {
+    color: white;
+}
+#footer .subscribe #email {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 0.5rem;
+}
+#footer .subscribe #submit {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 0.5rem;
+}
