@@ -233,6 +233,12 @@ header #header {
     width: 100%;
 }
 
+@media all and (max-width: 780px) {
+    #training-section .training .box {
+        width: 75%;
+        height: auto;
+    }
+}
 @media all and (max-width: 450px) {
     #training-section .training {
         padding: 1.5rem;
@@ -262,6 +268,9 @@ header #header {
 }
 
 @media all and (max-width: 780px) {
+    #about-section .about {
+        padding: 0 8% 5% 8%;
+    }
     #about-section .about p {
         font-size: 1.05rem;
     }
@@ -286,6 +295,11 @@ header #header {
     background-size: cover;
 }
 
+@media all and (max-width: 780px) {
+    #image-section {
+        height: 23rem;
+    }
+}
 @media all and (max-width: 450px) {
     #image-section {
         height: 15rem;
@@ -339,13 +353,13 @@ header #header {
 @media all and (max-width: 780px) {
     #learn-section .learn .training-articles {
         gap: 2%;
-        padding: 0 5% 2rem 5%;
+        padding: 0 3% 4% 3%;
     }
     #learn-section .learn .article {
         padding: 0.5rem 0.5rem 1rem 0.5rem;
     }
     #learn-section .article h3 {
-        font-size: 1.05rem;
+        font-size: 1.15rem;
     }
     #learn-section .article h4 {
         font-size: 0.9rem;
